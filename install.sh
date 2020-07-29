@@ -4,7 +4,7 @@ set -e
 
 cd ~
 
-if [[ -d brodzki-zsh ]] ; 
+if [[ -d brodzki-zsh ]] ; then
     rm -rf brodzki-zsh
 fi
 git clone https://github.com/ArturB/brodzki-zsh
