@@ -9,7 +9,11 @@ if [[ -d brodzki-zsh ]] ; then
 fi
 git clone https://github.com/ArturB/brodzki-zsh
 
+if [[ -d .oh-my-zsh ]] ; then
+    rm -rf .oh-my-zsh
+fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 cp brodzki-zsh/brodzki.zsh-theme ~/.oh-my-zsh/themes/
 sed -i 's/^ZSH_THEME=\".*/ZSH_THEME=\"brodzki\"/g' ~/.zshrc
 sed -i 's/.*COMPLETION_WAITING_DOTS.*/COMPLETION_WAITING_DOTS=\"true\"/g' ~/.zshrc
