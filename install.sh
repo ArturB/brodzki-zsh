@@ -23,3 +23,4 @@ sed -i 's/^ZSH_THEME=\".*/ZSH_THEME=\"brodzki\"/g' ~/.zshrc
 sed -i 's/.*COMPLETION_WAITING_DOTS.*/COMPLETION_WAITING_DOTS=\"true\"/g' ~/.zshrc
 
 rm -rf brodzki-zsh
+exit 0
